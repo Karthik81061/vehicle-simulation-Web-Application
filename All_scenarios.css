@@ -1,0 +1,268 @@
+/* All Scenario Page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+
+    position: relative;
+    width: 100%;
+
+}
+.sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(78, 193, 255, 0.162);
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    z-index: 1;
+    padding-top: 5%;
+}
+.sidebar ul li{
+    width: 100%;
+    list-style: none;
+
+    transition: padding .3s;
+
+}
+.sidebar ul li a{
+    width: 100%;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+    transition: background-color .2s;
+}
+
+.sidebar ul li a:active{
+    background-color: rgba(78, 193, 255, 0.162);
+}
+
+.sidebar ul li:hover{   /*edit after*/
+    padding-left: 30px;
+
+}
+.sidebar ul li a i{
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
+}
+.sidebar .title{
+    padding: 0 10px;
+    font-size: 20px;
+}
+/* Add Scenario  */
+.add-spage{
+    padding-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.main{
+    background-color: #1e1e1e;
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+
+    border: 8px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.card{
+    
+    background-color: #1e1e1e;
+    width: 90%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    flex-direction: column;
+
+    position: relative;
+       
+       
+}
+
+
+/* Card visual */
+.top-bar{
+
+    background-color: #1e1e1e;
+    height: 90px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+}
+.top-bar p{
+    color: white;
+    padding-top: 40px;
+
+    font-size: 20px;
+}
+.heading{
+    margin-left: 0px;
+    height: 100px;
+    border: none;
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+
+
+
+.heading p{
+    position: relative;
+    right: 390px;
+    top: 20px;
+    color: white;
+    border: 2px solid; 
+    padding: 20px 40%;
+    border: none;
+    display: inline;
+    font-size: 34px;
+    
+    padding-left: 0px;
+
+
+}
+.tab1{
+    border:none;
+    color: rgb(22, 22, 22);
+    /* padding: 10px 20px; */
+    margin-left: 60px;
+    width: 90%;
+    border-collapse: collapse;
+
+    text-align: center;
+}
+
+.tab1 tr td{
+    background-color: #f0f0f0;
+    padding: 0px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    border-bottom: 2px solid black;
+    
+}
+.tab1 th{
+    background-color: #333333;
+    color : white;
+    padding: 10px 30px;
+    border-collapse: collapse;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+
+
+.text-heading{
+    color: #c0c0c0;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+/* Buttons */
+
+.buttons_icon{
+
+    height: 40px;
+    width: 100%;
+    font-size: 30px;
+    border: none;
+}
+.buttons_icon:active{
+    opacity: .6;
+}
+
+
+.go-back{
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    bottom: 40px;
+
+    text-align: center;
+    padding: 10px 12px;
+    
+    text-decoration: none;
+    color: white;
+    font-weight:normal;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #e37933;
+
+    transition: width .3s, height .3s, padding .3s , margin .3s;
+}
+
+.add:active{
+    opacity: 0.5;
+}
+.reset:active{
+    opacity: 0.5;
+}
+.go-back:active{
+    opacity: 0.5;
+}
+.go-back:hover{
+    width: 140px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+.newS:hover{
+    width: 130px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+.newVehicle:hover{
+    width: 120px;
+ 
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+    margin-right: 4px;
+}
+
+.newS{
+    background-color: #4a9aba;
+}
+.newVehicle{
+    background-color: #5cb85c;
+}

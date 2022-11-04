@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Vehicle Page</title>
+    <link rel="stylesheet" href="Add_vehicles.css">
+    <script src="https://kit.fontawesome.com/f775927e2f.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="Add_Vehicle_Page"  >
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="Home_page.html">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <div class="title">Home</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="Add_Scenario.html">
+                        <i class="fa-solid fa-file-circle-plus"></i>
+                        <div class="title">Add Scenario</div>
+                    </a>
+                </li>
+                <li >
+                    <a href="All_Scenarios.html">
+                        <i class="fa-solid fa-folder-tree"></i>
+                        <div class="title">All Scenario</div>
+                    </a>
+                </li>               
+                <li class="add-spage">
+                    <a href="#">
+                        <i class="fa-solid fa-car"></i>
+                        <div class="title">Add vehicle</div>
+                    </a>
+                </li>
+            </ul>
+
+            </div>
+        </div>
+
+        <form id="AVform">
+        <div class="main">
+            <div class="card">
+                <div class="top-bar"><p>Vehicles  &#47 add</p></div>
+                <div class="heading"><p>Add Vehicle</p></div>
+                <div class="inner-card">
+                    
+                    <div class="user-input">
+                        <!-- select scenarios -->
+
+                        <p class="text-heading">Add Scenario</p>
+
+                        <Select class="select-scenario" id="add_vehicles" name="Scenario-name"  >
+                           <option value="" selected disabled> Select a Scenario</option>                        
+                        </Select>
+
+                    </div>
+                    <div class="user-input">
+                        <p class="text-heading">Vehicle Name</p>
+                        <input type="text" name="vehicle-name"  class="add-text" placeholder="Target abc" id="vehicle_name" required autocomplete="off">
+                        
+                    </div>
+                    <div class="user-input">
+                        <p class="text-heading">Speed  &#40 0 to 100 &#41</p>
+                        <input type="number" name="speed"  class="add-text" placeholder="0" id="speed" required min="1" max="100">
+                        
+                    </div>
+                    <div class="user-input">
+                        <p class="text-heading">Position X &#40 0 to 200&#41</p>
+                        <input type="number" name="position-X"  class="add-text" placeholder="0"  id="posX" required min=0 max="200">
+                        
+                    </div>
+                    <div class="user-input">
+                        <p class="text-heading">Position Y &#40 0 to 100&#41</p>
+                        <input type="number" name="position-Y"  class="add-text" placeholder="0" id="posY" required min='0' max="100">
+                        
+                    </div>
+                    <div class="user-input">
+                        <p class="text-heading">Direction</p>
+                        
+                            <Select class="select-scenario" id="direction" name="direction">
+                                <option value="none" selected disabled>Select direction</option>
+                                <option value="forward">Forwards</option>
+                                <option value="backward">Backwards</option>
+                                <option value="upward">Upwards</option>
+                                <option value="downward">Downwards</option>
+                            </Select>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="buttons"> 
+                <input type="submit" class="add" id="add" value="Add">
+                <input type="reset"  class="reset">
+                <a href="Home_page.html" class="go-back"> Go Back</a>
+               
+            </div>
+            </form>
+
+        </div>
+
+        
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board</title>
+    <link rel="stylesheet" href="All_scenarios.css">
+    <script src="https://kit.fontawesome.com/f775927e2f.js" crossorigin="anonymous"></script>
+
+   
+
+</head>
+<body id='All_Scenarios_Page'>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="Home_page.html">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <div class="title">Home</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="Add_Scenario.html">
+                        <i class="fa-solid fa-file-circle-plus"></i>
+                        <div class="title">Add Scenario</div>
+                    </a>
+                </li>
+                <li class="add-spage">
+                    <a href="#">
+                        <i class="fa-solid fa-folder-tree"></i>
+                        <div class="title">All Scenario</div>
+                    </a>
+                </li>
+                <li >
+                    <a href="Add_vehicles.html">
+                        <i class="fa-solid fa-car"></i>
+                        <div class="title">Add vehicle</div>
+                    </a>
+                </li>
+            </ul>
+
+            </div>
+        </div>
+       
+        <div class="main">
+
+            <div class="card">
+                <div class="top-bar"><p></p></div>
+                    <div class="heading"><p>All&nbsp;Scenarios</p>
+                        <div class="buttons">
+                        <a href="Add_Scenario.html" class="go-back newS">New Scenario</a>
+                        <a href="Add_vehicles.html" class="go-back newVehicle">Add Vehicle</a>
+                        <button class="go-back" id="Delete_All" onclick="deleteLocalStorage()">Delete All</button>
+                    </div>
+                </div>
+            <div class="inner-card">
+                    <table id="table" class="tab1">
+                       
+                        <tr class ="table_head tab1">
+                            <th>Scenario Id</th>
+                            <th>Scenario Name</th>
+                            <th>Scenario Time</th>
+                            <th>Number of Vehicles</th>
+                            <th>Add Vehicle</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

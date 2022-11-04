@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Scenario Page</title>
+    <link rel="stylesheet" href="Add_Scenario.css">
+    <script src="https://kit.fontawesome.com/f775927e2f.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body id="Add_Scenarios_Page" >
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="Home_page.html">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <div class="title">Home</div>
+                    </a>
+                </li>
+                <li class="add-spage">
+                    <a href="#">
+                        <i class="fa-solid fa-file-circle-plus"></i>
+                        <div class="title">Add Scenario</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="All_Scenarios.html">
+                        <i class="fa-solid fa-folder-tree"></i>
+                        <div class="title">All Scenario</div>
+                    </a>
+                </li>               
+                <li>
+                    <a href="Add_vehicles.html">
+                        <i class="fa-solid fa-car"></i>
+                        <div class="title">Add vehicle</div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <form id="ASform" >
+    <div class="main">
+                       
+        <div class="card">
+            <div class="top-bar"><p>Scenario  &#47 add</p></div>
+            <div class="heading"><p>Add Scenario</p></div>
+            <div class="inner-card">   
+                <div class="user-input">
+                    <p class="text-heading">Add Scenario</p>
+                    <input type="text" name="scenario"  class="add-text" placeholder="Test Scenario" id="scenarioName" required autocomplete="off">
+                </div>
+                <div class="user-input">
+                    <p class="text-heading">Scenario Time &#40seconds&#41</p>
+                    <input type="number"  name="runtime"  class="add-text" placeholder="10" id="runTime" required max="600">
+                        
+                </div>
+            </div>
+
+        </div>
+        <div class="buttons"> 
+           <button id="add" class="add" >Add</button>
+            <input type="reset"  class="reset">
+            <a href="Home_page.html" class="go-back"> Go Back</a>
+               
+        </div> 
+    </div>
+    </form>
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Home_Page.css">
+    <script src="https://kit.fontawesome.com/f775927e2f.js" crossorigin="anonymous"></script>
+    <title>Home Page</title>
+
+</head>
+<body id="Home_Page">
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li class="add-spage">
+                    <a href="#">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <div class="title">Home</div>
+                    </a>
+                </li>
+                <li >
+                    <a href="Add_Scenario.html">
+                        <i class="fa-solid fa-file-circle-plus"></i>
+                        <div class="title">Add Scenario</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="All_Scenarios.html">
+                        <i class="fa-solid fa-folder-tree"></i>
+                        <div class="title">All Scenario</div>
+                    </a>
+                </li>               
+                <li>
+                    <a href="Add_vehicles.html">
+                        <i class="fa-solid fa-car"></i>
+                        <div class="title">Add vehicle</div>
+                    </a>
+                </li>
+            </ul>
+
+            </div>
+        </div>
+
+        <form id="Hform">
+            <div class="main">
+                               
+                <div class="card">
+                    <div class="top-bar"><p><i class="fa-solid fa-triangle-exclamation"></i> Press Reload before you going to Select a Scenario. <br> It will Reset the Table.</p></div>
+                    <div class="selection">
+
+                    <select class="select-scenario" id="scenarios_name" onchange="home_ScenarioSelect(this)">  
+                        <option selected disabled>Select a Scenario</option>    
+                    </select>
+                    <button type="submit" class="orange" onclick="location.reload()"> Reload</button>
+                </div>
+                    <div class="inner-card">   
+                        <table id="vehicles_table" class="tab1">
+                            <thead>
+                            <tr class ="table_head tab1">
+                                <th>Vehicle Id</th>
+                                <th>Vehicle Name</th>
+                                <th>Position X</th>
+                                <th>Position Y</th>
+                                <th>Speed</th>
+                                <th>Direction</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                        
+                        <div class="buttons"> 
+                        <button type="button" id="start-simulation" class="green" onclick="startSimulation()">Start Simulation</button>
+                        <button type="button" id="stop-simulation" class="blue" onclick="stopSimulation()">Stop Simulation</button>
+                        </div>
+                    </div>
+
+
+                <!-- This For Graph -->
+                    <div class="graph-card" id="graph-card">
+                        <canvas></canvas>
+                        </div>
+                    </div>
+
+                </div>
+                
+        </form> 
+        <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
